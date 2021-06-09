@@ -1,18 +1,18 @@
 package atoi
 
 import (
-	"errors"
+	"fmt"
 	"strconv"
 )
 
 func Atoi(s string) (int,error) {
 	// check to empty
 	if s == "" {
-		return 0, errors.New("empty name provided")
+		return 0, fmt.Errorf("can not convert string to int: invalid format")
 	}
 	_, err := strconv.Atoi(s)
 	if err != nil {
-		return 0, errors.New("wrong name provided")
+		return 0, fmt.Errorf("can not convert string to int: invalid format")
 	}
 
 	var reverse string
