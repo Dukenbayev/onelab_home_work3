@@ -34,4 +34,5 @@ func main(){
 	}
 	fmt.Printf("Check type: %T and number: %v" ,number,number)
 
+	//
 }
