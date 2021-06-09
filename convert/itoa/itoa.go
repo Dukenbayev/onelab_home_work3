@@ -1,4 +1,4 @@
-package Itoa
+package itoa
 
 func Itoa(n int) string {
 	var (
